@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Java,String," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -51,22 +51,16 @@
 
 
 
-<meta name="description" content="two sum
-
-123456789101112131415public class Solution &amp;#123;    public int[] twoSum(int[] nums, int target) &amp;#123;        int[] result = new int[2];        Map&amp;lt;Integer, Integer&amp;gt; hashMap = new Hash">
+<meta name="description" content="I am at the bottom of the life, going upIt is true that through the 23 years I live in the world, I am at the bottom of my life now. The sky is very high, I am going up, up and up.Today I woke up befo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Two sum">
-<meta property="og:url" content="http://yoursite.com/2015/11/19/Test-another-article/index.html">
+<meta property="og:title" content="From the bottom of life to the glory is the best">
+<meta property="og:url" content="http://yoursite.com/2015/12/06/From-the-bottom-of-life-to-the-glory-is-the-best/index.html">
 <meta property="og:site_name" content="Anthony's World">
-<meta property="og:description" content="two sum
-
-123456789101112131415public class Solution &amp;#123;    public int[] twoSum(int[] nums, int target) &amp;#123;        int[] result = new int[2];        Map&amp;lt;Integer, Integer&amp;gt; hashMap = new Hash">
-<meta property="og:updated_time" content="2015-11-28T05:18:10.000Z">
+<meta property="og:description" content="I am at the bottom of the life, going upIt is true that through the 23 years I live in the world, I am at the bottom of my life now. The sky is very high, I am going up, up and up.Today I woke up befo">
+<meta property="og:updated_time" content="2015-12-07T04:04:33.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Two sum">
-<meta name="twitter:description" content="two sum
-
-123456789101112131415public class Solution &amp;#123;    public int[] twoSum(int[] nums, int target) &amp;#123;        int[] result = new int[2];        Map&amp;lt;Integer, Integer&amp;gt; hashMap = new Hash">
+<meta name="twitter:title" content="From the bottom of life to the glory is the best">
+<meta name="twitter:description" content="I am at the bottom of the life, going upIt is true that through the 23 years I live in the world, I am at the bottom of my life now. The sky is very high, I am going up, up and up.Today I woke up befo">
 
 
 
@@ -78,7 +72,7 @@
   };
 </script>
 
-  <title> Two sum | Anthony's World </title>
+  <title> From the bottom of life to the glory is the best | Anthony's World </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -218,7 +212,7 @@
             
             
               
-                Two sum
+                From the bottom of life to the glory is the best
               
             
           </h1>
@@ -227,8 +221,8 @@
         <div class="post-meta">
           <span class="post-time">
             Posted on
-            <time itemprop="dateCreated" datetime="2015-11-19T00:15:56-05:00" content="2015-11-19">
-              2015-11-19
+            <time itemprop="dateCreated" datetime="2015-12-06T22:57:07-05:00" content="2015-12-06">
+              2015-12-06
             </time>
           </span>
 
@@ -237,8 +231,8 @@
               &nbsp; | &nbsp; In
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/LeetCode/" itemprop="url" rel="index">
-                    <span itemprop="name">LeetCode</span>
+                  <a href="/categories/Diary/" itemprop="url" rel="index">
+                    <span itemprop="name">Diary</span>
                   </a>
                 </span>
 
@@ -266,40 +260,25 @@
       
 
       
-        <span itemprop="articleBody"><ul>
-<li>two sum</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] twoSum(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target) &#123;</span><br><span class="line">        <span class="keyword">int</span>[] result = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">2</span>];</span><br><span class="line">        Map&lt;Integer, Integer&gt; hashMap = <span class="keyword">new</span> HashMap&lt;Integer, Integer&gt;(<span class="number">2</span>,<span class="number">1.0f</span>);</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;nums.length;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(hashMap.containsKey(target-nums[i]))&#123;</span><br><span class="line">                result[<span class="number">1</span>] = i+<span class="number">1</span>;</span><br><span class="line">                result[<span class="number">0</span>] = hashMap.get(target-nums[i]);</span><br><span class="line">                <span class="keyword">return</span> result;</span><br><span class="line">            &#125;</span><br><span class="line">            hashMap.put(nums[i],i+<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <span itemprop="articleBody"><h2 id="I_am_at_the_bottom_of_the_life,_going_up">I am at the bottom of the life, going up</h2><p>It is true that through the 23 years I live in the world, I am at the bottom of my life now. The sky is very high, I am going up, up and up.<br>Today I woke up before 8:30 am and went to Bobst to study, in the afternoon, I played basketball and ran for half an hour at 4.5 speed. It is exciting to have an exercise. Then I finish doing the Algorithms homework 6, which takes me almost ‘3’ days to do.<br>I can say I am different from the me before today, and I listened to a very good speech in the subway about the CEO of twitter, I admired someone like him and wanted to learn from him, first from this speech.<br>Talking about English, this speech is good material and about other materials, I have two love stories to listen to and don’t forget about the modern family and the Ted speechs, countless good materials for me to practice, it is very good.<br>Now, focus on want I want to do. Today is Dec 6th, 2015, 9 days Java exam, 2 days algorithms, 1.5 days Programming language and leetcode, English, Workout.<br>Let’s go Yu Shu!</p>
 </span>
       
     </div>
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/Java/" rel="tag">#Java</a>
-          
-            <a href="/tags/String/" rel="tag">#String</a>
-          
-        </div>
-      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/11/19/One-Thousand-and-One-Nights/" rel="next" title="One Thousand and One Nights">
-                <i class="fa fa-chevron-left"></i> One Thousand and One Nights
+              <a href="/2015/12/05/Sleep-Sleep-Sleep/" rel="next" title="Sleep, Sleep, Sleep">
+                <i class="fa fa-chevron-left"></i> Sleep, Sleep, Sleep
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/11/27/Thanks-Giving-Day/" rel="prev" title="Thanks Giving Day">
-                Thanks Giving Day <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -439,7 +418,7 @@
               
             
             
-              <p class="post-toc-empty">This post does not have a Table Of Contents</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#I_am_at_the_bottom_of_the_life,_going_up"><span class="nav-number">1.</span> <span class="nav-text">I am at the bottom of the life, going up</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
