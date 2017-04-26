@@ -52,21 +52,45 @@
 
 
 <meta name="description" content="&amp;lt;!DOCTYPE html&amp;gt;
-              Info windows          / Always set the map height explicitly to define the size of the div
-        element that contains the map. /      #map {        height: 100%;">
+
+  
+    
+    
+    Info windows
+    
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height:">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Anthony's World">
 <meta property="og:url" content="http://yoursite.com/test10/index.html">
 <meta property="og:site_name" content="Anthony's World">
 <meta property="og:description" content="&amp;lt;!DOCTYPE html&amp;gt;
-              Info windows          / Always set the map height explicitly to define the size of the div
-        element that contains the map. /      #map {        height: 100%;">
+
+  
+    
+    
+    Info windows
+    
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height:">
 <meta property="og:updated_time" content="2017-04-26T01:11:57.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Anthony's World">
 <meta name="twitter:description" content="&amp;lt;!DOCTYPE html&amp;gt;
-              Info windows          / Always set the map height explicitly to define the size of the div
-        element that contains the map. /      #map {        height: 100%;">
+
+  
+    
+    
+    Info windows
+    
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height:">
 
 
 
@@ -206,9 +230,87 @@
   <div id="posts" class="posts-expand">
     
     
-      <p>&lt;!DOCTYPE html&gt;</p>
-<html><br>  <head><br>    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"><br>    <meta charset="utf-8"><br>    <title>Info windows</title><br>    <style><br>      /<em> Always set the map height explicitly to define the size of the div
-       </em> element that contains the map. <em>/<br>      #map {<br>        height: 100%;<br>      }<br>      /</em> Optional: Makes the sample page fill the window. */<br>      html, body {<br>        height: 100%;<br>        margin: 0;<br>        padding: 0;<br>      }<br>    </style><br>  </head><br>  <body><br>    <div id="map"></div><br>    <script><br><br>      // This example displays a marker at the center of Australia.<br>      // When the user clicks the marker, an info window opens.<br><br>      function initMap() {<br>        var nyc = {lat: 40.730610, lng: -73.935242};<br>        var map = new google.maps.Map(document.getElementById(‘map’), {<br>          zoom: 3,<br>          center: nyc<br>        });<br><br>        var contentString = ‘<div id="content">‘+<br>            ‘<div id="siteNotice">‘+<br>            ‘</div>‘+<br>            ‘<h1 id="firstHeading" class="firstHeading">NYC</h1>‘+<br>            ‘<div id="bodyContent">‘+<br>            ‘<p><b>NYC</b>, also referred to as <b>Ayers Rock</b>, is a large ‘ +<br>            ‘sandstone rock formation in the southern part of the ‘+<br>            ‘Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) ‘+<br>            ‘south west of the nearest large town, Alice Springs; 450&#160;km ‘+<br>            ‘(280&#160;mi) by road. Kata Tjuta and Uluru are the two major ‘+<br>            ‘features of the Uluru - Kata Tjuta National Park. Uluru is ‘+<br>            ‘sacred to the Pitjantjatjara and Yankunytjatjara, the ‘+<br>            ‘Aboriginal people of the area. It has many springs, waterholes, ‘+<br>            ‘rock caves and ancient paintings. Uluru is listed as a World ‘+<br>            ‘Heritage Site.</p>‘+<br>            ‘<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=NYC">‘+<br>            ‘https://en.wikipedia.org/w/index.php?title=NYC</a> ‘+<br>            ‘(last visited June 22, 2009).</p>‘+<br>            ‘</div>‘+<br>            ‘</div>‘;<br><br>        var infowindow = new google.maps.InfoWindow({<br>          content: contentString<br>        });<br><br>        var marker = new google.maps.Marker({<br>          position: nyc,<br>          map: map,<br>          title: ‘NYC’<br>        });<br>        marker.addListener(‘click’, function() {<br>          infowindow.open(map, marker);<br>        });<br><br>        var marker2 = new google.maps.Marker({<br>          position: {lat: 42.3601, lng: -71.0589},<br>          map: map,<br>          title: “Boston”<br>        });<br><br><br>      }<br>    </script><br>    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjJLJEh3ImB_AfkFAR7VkbozYT4PQtmb0&callback=initMap"><br>    </script><br>  </body><br></html>
+      <!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Info windows</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+
+      // This example displays a marker at the center of Australia.
+      // When the user clicks the marker, an info window opens.
+
+      function initMap() {
+        var nyc = {lat: 40.730610, lng: -73.935242};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 3,
+          center: nyc
+        });
+
+        var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">NYC</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>NYC</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
+            'sandstone rock formation in the southern part of the '+
+            'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+            'south west of the nearest large town, Alice Springs; 450&#160;km '+
+            '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+            'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+            'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+            'Aboriginal people of the area. It has many springs, waterholes, '+
+            'rock caves and ancient paintings. Uluru is listed as a World '+
+            'Heritage Site.</p>'+
+            '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=NYC">'+
+            'https://en.wikipedia.org/w/index.php?title=NYC</a> '+
+            '(last visited June 22, 2009).</p>'+
+            '</div>'+
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+
+        var marker = new google.maps.Marker({
+          position: nyc,
+          map: map,
+          title: 'NYC'
+        });
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+
+        var marker2 = new google.maps.Marker({
+          position: {lat: 42.3601, lng: -71.0589},
+          map: map,
+          title: "Boston"
+        });
+
+
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjJLJEh3ImB_AfkFAR7VkbozYT4PQtmb0&callback=initMap">
+    </script>
+  </body>
+</html>
     
   </div>
 
