@@ -51,22 +51,31 @@
 
 
 
-<meta name="description" content="&amp;lt;!DOCTYPE html&amp;gt;
-              Info windows          / Always set the map height explicitly to define the size of the div
-        element that contains the map. /      #map {        height: 100%;">
+<meta name="description" content="Info windows          /* Always set the map height explicitly to define the size of the div
+   * element that contains the map. */
+  #map {
+    height: 100%;
+  }
+  /* Optional: Makes the sample page f">
 <meta property="og:type" content="website">
 <meta property="og:title" content="test10">
 <meta property="og:url" content="http://yoursite.com/test10/index.html">
 <meta property="og:site_name" content="Anthony's World">
-<meta property="og:description" content="&amp;lt;!DOCTYPE html&amp;gt;
-              Info windows          / Always set the map height explicitly to define the size of the div
-        element that contains the map. /      #map {        height: 100%;">
-<meta property="og:updated_time" content="2017-04-26T01:15:56.000Z">
+<meta property="og:description" content="Info windows          /* Always set the map height explicitly to define the size of the div
+   * element that contains the map. */
+  #map {
+    height: 100%;
+  }
+  /* Optional: Makes the sample page f">
+<meta property="og:updated_time" content="2017-04-26T01:25:35.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="test10">
-<meta name="twitter:description" content="&amp;lt;!DOCTYPE html&amp;gt;
-              Info windows          / Always set the map height explicitly to define the size of the div
-        element that contains the map. /      #map {        height: 100%;">
+<meta name="twitter:description" content="Info windows          /* Always set the map height explicitly to define the size of the div
+   * element that contains the map. */
+  #map {
+    height: 100%;
+  }
+  /* Optional: Makes the sample page f">
 
 
 
@@ -206,9 +215,76 @@
   <div id="posts" class="posts-expand">
     
     
-      <p>&lt;!DOCTYPE html&gt;</p>
-<html><br>  <head><br>    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"><br>    <meta charset="utf-8"><br>    <title>Info windows</title><br>    <style><br>      /<em> Always set the map height explicitly to define the size of the div
-       </em> element that contains the map. <em>/<br>      #map {<br>        height: 100%;<br>      }<br>      /</em> Optional: Makes the sample page fill the window. */<br>      html, body {<br>        height: 100%;<br>        margin: 0;<br>        padding: 0;<br>      }<br>    </style><br>  </head><br>  <body><br>    <div id="map"></div><br>    <script><br><br>      // This example displays a marker at the center of Australia.<br>      // When the user clicks the marker, an info window opens.<br><br>      function initMap() {<br>        var nyc = {lat: 40.730610, lng: -73.935242};<br>        var map = new google.maps.Map(document.getElementById(‘map’), {<br>          zoom: 3,<br>          center: nyc<br>        });<br><br>        var contentString = ‘<div id="content">‘+<br>            ‘<div id="siteNotice">‘+<br>            ‘</div>‘+<br>            ‘<h1 id="firstHeading" class="firstHeading">NYC</h1>‘+<br>            ‘<div id="bodyContent">‘+<br>            ‘<p><b>NYC</b>, also referred to as <b>Ayers Rock</b>, is a large ‘ +<br>            ‘sandstone rock formation in the southern part of the ‘+<br>            ‘Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) ‘+<br>            ‘south west of the nearest large town, Alice Springs; 450&#160;km ‘+<br>            ‘(280&#160;mi) by road. Kata Tjuta and Uluru are the two major ‘+<br>            ‘features of the Uluru - Kata Tjuta National Park. Uluru is ‘+<br>            ‘sacred to the Pitjantjatjara and Yankunytjatjara, the ‘+<br>            ‘Aboriginal people of the area. It has many springs, waterholes, ‘+<br>            ‘rock caves and ancient paintings. Uluru is listed as a World ‘+<br>            ‘Heritage Site.</p>‘+<br>            ‘<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=NYC">‘+<br>            ‘https://en.wikipedia.org/w/index.php?title=NYC</a> ‘+<br>            ‘(last visited June 22, 2009).</p>‘+<br>            ‘</div>‘+<br>            ‘</div>‘;<br><br>        var infowindow = new google.maps.InfoWindow({<br>          content: contentString<br>        });<br><br>        var marker = new google.maps.Marker({<br>          position: nyc,<br>          map: map,<br>          title: ‘NYC’<br>        });<br>        marker.addListener(‘click’, function() {<br>          infowindow.open(map, marker);<br>        });<br><br>        var marker2 = new google.maps.Marker({<br>          position: {lat: 42.3601, lng: -71.0589},<br>          map: map,<br>          title: “Boston”<br>        });<br><br><br>      }<br>    </script><br>    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjJLJEh3ImB_AfkFAR7VkbozYT4PQtmb0&callback=initMap"><br>    </script><br>  </body><br></html>
+      <p>  <head><br>    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"><br>    <meta charset="utf-8"><br>    <title>Info windows</title><br>    <style><br>      /* Always set the map height explicitly to define the size of the div</p>
+<pre><code>   * element that contains the map. */
+  <span class="comment">#map {</span>
+    height: 100%;
+  }
+  /* Optional: Makes the sample page<span class="instruction"> fill </span>the window. */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+&lt;/style&gt;
+</code></pre><p>  </head><br>  <body><br>    <div id="map"></div><br>    <script></p>
+<pre><code>  <span class="comment">// This example displays a marker at the center of Australia.</span>
+  <span class="comment">// When the user clicks the marker, an info window opens.</span>
+
+  function initMap() {
+    <span class="built_in">var</span> nyc = {lat: <span class="number">40.730610</span>, lng: -<span class="number">73.935242</span>};
+    <span class="built_in">var</span> <span class="built_in">map</span> = <span class="literal">new</span> google<span class="built_in">.</span>maps<span class="built_in">.</span><span class="built_in">Map</span>(document<span class="built_in">.</span>getElementById(<span class="string">'map'</span>), {
+      zoom: <span class="number">3</span>,
+      center: nyc
+    });
+
+    <span class="built_in">var</span> contentString = <span class="string">'&lt;div id="content"&gt;'</span>+
+        <span class="string">'&lt;div id="siteNotice"&gt;'</span>+
+        <span class="string">'&lt;/div&gt;'</span>+
+        <span class="string">'&lt;h1 id="firstHeading" class="firstHeading"&gt;NYC&lt;/h1&gt;'</span>+
+        <span class="string">'&lt;div id="bodyContent"&gt;'</span>+
+        <span class="string">'&lt;p&gt;&lt;b&gt;NYC&lt;/b&gt;, also referred to as &lt;b&gt;Ayers Rock&lt;/b&gt;, is a large '</span> +
+        <span class="string">'sandstone rock formation in the southern part of the '</span>+
+        <span class="string">'Northern Territory, central Australia. It lies 335&amp;#160;km (208&amp;#160;mi) '</span>+
+        <span class="string">'south west of the nearest large town, Alice Springs; 450&amp;#160;km '</span>+
+        <span class="string">'(280&amp;#160;mi) by road. Kata Tjuta and Uluru are the two major '</span>+
+        <span class="string">'features of the Uluru - Kata Tjuta National Park. Uluru is '</span>+
+        <span class="string">'sacred to the Pitjantjatjara and Yankunytjatjara, the '</span>+
+        <span class="string">'Aboriginal people of the area. It has many springs, waterholes, '</span>+
+        <span class="string">'rock caves and ancient paintings. Uluru is listed as a World '</span>+
+        <span class="string">'Heritage Site.&lt;/p&gt;'</span>+
+        <span class="string">'&lt;p&gt;Attribution: Uluru, &lt;a href="https://en.wikipedia.org/w/index.php?title=NYC"&gt;'</span>+
+        <span class="string">'https://en.wikipedia.org/w/index.php?title=NYC&lt;/a&gt; '</span>+
+        <span class="string">'(last visited June 22, 2009).&lt;/p&gt;'</span>+
+        <span class="string">'&lt;/div&gt;'</span>+
+        <span class="string">'&lt;/div&gt;'</span>;
+
+    <span class="built_in">var</span> infowindow = <span class="literal">new</span> google<span class="built_in">.</span>maps<span class="built_in">.</span>InfoWindow({
+      content: contentString
+    });
+
+    <span class="built_in">var</span> marker = <span class="literal">new</span> google<span class="built_in">.</span>maps<span class="built_in">.</span>Marker({
+      position: nyc,
+      <span class="built_in">map</span>: <span class="built_in">map</span>,
+      title: <span class="string">'NYC'</span>
+    });
+    marker<span class="built_in">.</span>addListener(<span class="string">'click'</span>, function() {
+      infowindow<span class="built_in">.</span>open(<span class="built_in">map</span>, marker);
+    });
+
+    <span class="built_in">var</span> marker2 = <span class="literal">new</span> google<span class="built_in">.</span>maps<span class="built_in">.</span>Marker({
+      position: {lat: <span class="number">42.3601</span>, lng: -<span class="number">71.0589</span>},
+      <span class="built_in">map</span>: <span class="built_in">map</span>,
+      title: <span class="string">"Boston"</span>
+    });
+
+
+  }
+&lt;/script&gt;
+&lt;script async defer
+src=<span class="string">"https://maps.googleapis.com/maps/api/js?key=AIzaSyCjJLJEh3ImB_AfkFAR7VkbozYT4PQtmb0&amp;callback=initMap"</span>&gt;
+&lt;/script&gt;
+</code></pre></style></head></p>
     
   </div>
 
